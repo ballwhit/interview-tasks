@@ -8,7 +8,7 @@ You are given a string containing various parentheses such as parentheses "()", 
 - `"{[()]}"` is also considered balanced.
 - `"{[()]}"` - considered unbalanced due to the sequence `"(]"`.
 - `"(()"` is also considered unbalanced due to the missing closing parenthesis.
-Your function should return True if the parentheses are balanced and False if they are unbalanced.
+Your function should return `True` if the parentheses are balanced and `False` if they are unbalanced.
 
 ## Note:
 
