@@ -20,24 +20,22 @@ The input string may contain other characters, but we only consider parentheses 
 # Solution
 
 ```python
-def check(s):
-    brackets = {'[': ']', '(': ')', '{': '}'}
+def isValid(s):
     stack = []
+    brackets = {'(': ')', '[': ']', '{': '}'}
 
     for char in s:
         if char in brackets.keys():
             stack.append(char)
         elif char in brackets.values():
-            if stack and brackets.get(stack[-1], None) == char:
-                stack.pop()
-            else:
-                stack.append(char)
+            if not stack or brackets[stack.pop()] != char:
+                return False
 
     return not stack
 
 
-print(check('   ()[]{}  '))
-print(check('   ((()))  '))
-print(check('   )()     '))
-print(check('   ([{)]}  '))
+print(isValid('   ()[]{}  '))
+print(isValid('   ((()))  '))
+print(isValid('   )()     '))
+print(isValid('   ([{)]}  '))
 ```
