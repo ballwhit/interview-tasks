@@ -36,8 +36,8 @@ def check(s):
     return not stack
 
 
-print(check('()[]{}'))
-print(check('((()))'))
-print(check(')()'))
-print(check('([{)]}'))
+print(check('   ()[]{}  '))
+print(check('   ((()))  '))
+print(check('   )()     '))
+print(check('   ([{)]}  '))
 ```
