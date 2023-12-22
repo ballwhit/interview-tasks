@@ -14,3 +14,6 @@ Your function should return `True` if the parentheses are balanced and `False` i
 ## Note:
 
 The input string may contain other characters, but we only consider parentheses to check the balance.
+
+![](https://media.giphy.com/media/hYrsNV7n0HYi0Xx9QR/giphy.gif)
+
